@@ -477,7 +477,7 @@ public class HttpPostStandardRequestDecoder implements InterfaceHttpPostRequestD
     private void parseBodyAttributes() {
         if(!this.request.headers().get("Content-Type").startsWith(APPLICATION_X_WWW_FORM_URLENCODED)){
             return;
-        }b
+        }
         if (!undecodedChunk.hasArray()) {
             parseBodyAttributesStandard();
             return;
