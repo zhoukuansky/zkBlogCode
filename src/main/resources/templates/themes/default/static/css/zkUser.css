@@ -16,22 +16,22 @@
 .post-content h4::before,
 .post-content h5::before,
 .post-content h6::before{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 .comment-header .comment-by-author a {
-    color: #f88c54!important;
+    color: #ff0000!important;
 }
 .navbar-search form .search-box input{
-    border:1px solid #ff9966;
+    border:1px solid #ff0000;
 }
 .post-title a:hover{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 .navbar-menu a:hover{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 .navbar-menu a:active{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 .info-logo{
     display: block;
@@ -50,23 +50,32 @@
     width: auto;
     text-align: center;
     /*color: #767676;*/
-    color: rgba(255,255,255,.4);
+    color: rgba(255,255,255,1);
     font-size: 13px;
     opacity: .7;
     font-family: "plantc", "Source Han Serif", serif;
 }
 .info-text p a{
-    color: rgba(255,255,255,.4);
+    color: rgba(255,255,255,1);
 }
 .info-text p a:hover{
     color: #ffcc99!important;
 }
 .en{
     font-size: 14px!important;
-    color: rgba(255,255,255,.5) !important;
+    color: rgba(255,255,255,1) !important;
 }
 .en a{
-    color: rgba(255,255,255,.5) !important;
+    color: rgba(255,255,255,1) !important;
+}
+
+.post-list-item-container {
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2)!important;
+    box-shadow: 0 1px 4px rgba(0,0,0,.25)!important;
+}
+.post-list-item-container:hover {
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.5)!important;
+    box-shadow: 0 1px 4px rgba(0,0,0,.5)!important;
 }
 
 
@@ -74,20 +83,20 @@
 overflow: visible!important;
 }
 #directory ul li a:hover{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 #directory>ul>li::before{
-    background-color:#ff9966!important;
+    background-color:#ff0000!important;
 }
 
 .navbar-mobile-menu:active .icon-menu.cross .middle, .navbar-mobile-menu:active .icon-menu.cross:after, .navbar-mobile-menu:active .icon-menu.cross:before, .navbar-mobile-menu:hover .icon-menu.cross .middle, .navbar-mobile-menu:hover .icon-menu.cross:after, .navbar-mobile-menu:hover .icon-menu.cross:before {
-    background: #ff9966!important;
+    background: #ff0000!important;
 }
 .navbar-mobile-menu ul li a{
     text-align: center;
 }
 .navbar-mobile-menu ul li a:hover{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 .home_blog{
     font-size: 20px;
@@ -95,7 +104,17 @@ overflow: visible!important;
     top: -13px;
 }
 .home_blog:hover{
-   color: #ff9966;
+   color: #ff0000;
+}
+
+.bg-grey {
+    background-color: #ffffff!important;
+}
+.comment-container {
+    background-color: #ffffff!important;
+}
+.comment-form {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.7)!important;
 }
 
 .navbar-container {
@@ -109,26 +128,33 @@ overflow: visible!important;
 .header{
     height: 80px!important;
     line-height: 78px;
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.2)!important;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,.2)!important;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2)!important;
 }
 .footer{
     padding-bottom: 0px!important;
-        border-top: 6px solid #c40000!important;
 }
 .footer-meta {
     padding: 40px 0 0!important;
-    background: #2F2F2f;
+    background: #101010;
 }
 .footer-meta .footer-container {
     height: 220px!important;
 }
 .footer-social{
-    background: #2f2f2f;
+    background: #161616;
+    border-top: 6px solid #f00000!important;
+    border-bottom: 2px solid rgba(184,197,214,.2)!important;
 }
 .footer-social .social-list a:hover{
     color: #ffcc99!important;
 }
+.footer-social .social-list a{
+    color: rgba(255,255,255,.9)!important;
+}
 .lists-navigator ol li.current a{
-    color: #ff9966!important;
+    color: #ff0000!important;
 }
 
 #directory{
@@ -139,3 +165,30 @@ overflow: visible!important;
 	margin-top: 40px;
 	margin-bottom: 120px;
 }
+
+
+
+
+
+/* markdomn代码解析显示 */
+.post-content pre code {
+    color: #abb2bf!important;
+    background-color: #282c34!important;
+}
+.hljs-title, .hljs-section {
+    color: #f0c0c0!important;
+}
+.hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+    color: #f0c0c0!important;
+}
+.hljs-built_in, .hljs-bullet, .hljs-code, .hljs-addition {
+    color: #96b8f8!important;
+}
+.hljs-regexp, .hljs-symbol, .hljs-variable, .hljs-template-variable, .hljs-link, .hljs-selector-attr, .hljs-selector-pseudo {
+    color: #fae790!important;
+}
+.hljs-literal {
+    color: #fae790!important;
+}
+
+
